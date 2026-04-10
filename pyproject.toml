@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools>=64", "setuptools-scm>=8"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "panda-mjlab"
+version = "0.1.0"
+description = "Franka Panda cube-lifting task for MJLab"
+requires-python = ">=3.10"
+dependencies = ["mjlab"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["panda_mjlab*"]
